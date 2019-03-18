@@ -28,6 +28,15 @@
 
         <%= link_to t("welcome.feed.see_all_proposals"), proposals_path, class: "see-all" %>
       </div>
+      <div id="feed_proposals" class="small-12 column margin-top medium-4">
+        <div class="feed-content" data-equalizer-watch>
+          <h3 class="title"><%= t("shared.tags_cloud.districts") %></h3>
+          <br>
+          <%= link_to map_proposals_path, id: 'map', title: t("shared.tags_cloud.districts_list") do %>
+            <%= image_tag(image_path_for("map.jpg"), alt: t("shared.tags_cloud.districts_list")) %>
+          <% end %>
+        </div>
+      </div>
     <% end %>
 
     <% if feed_debates?(feed) %>
