@@ -1,21 +1,29 @@
-pl:
+﻿pl:
   account:
     show:
       change_credentials_link: Zmień moje dane logowania
+      email_on_comment_label: gdy ktoś skomentuje moje pomysły
+      email_on_comment_reply_label: gdy ktoś odpowie na mój komentarz
       erase_account_link: Usuń moje konto
       finish_verification: Zakończ weryfikację
       notifications: 'Informuj mnie drogą mailową:'
       organization_name_label: Nazwa organizacji
-      organization_responsible_name_placeholder: Reprezentant organizacji/kolektywu
+      organization_responsible_name_placeholder: Reprezentant organizacji/grupy nieformalnej
       personal: Dane osobowe
       phone_number_label: Numer telefonu
+      public_activity_label: Pokazuj publicznie moją listę aktywności
+      public_interests_label: Pokaż publicznie etykiety elementów, które obserwuję
       public_interests_my_title_list: Tagi elementów, które obserwuję
       public_interests_user_title_list: Tagi elementów, które obserwuje ten użytkownik
       save_changes_submit: Zapisz zmiany
+      subscription_to_website_newsletter_label: o innych, ważnych informacjach dotyczących portalu
+      email_on_direct_message_label: gdy ktoś wyśle mi wiadomość bezpośrednią
+      email_digest_label: o podsumowaniu powiadomień dotyczących pomysłów
+      official_position_badge_label: Pokaż odznakę oficjalnej pozycji
       recommendations: Rekomendacje
       title: Moje konto
-      user_permission_debates: Uczestnicz w debatach
-      user_permission_info: Z Twoim kontem możesz...
+      user_permission_debates: Przeglądać i komentować pomysły innych
+      user_permission_info: "Teraz możesz:"
       user_permission_proposal: Stwórz nowy pomysł
       user_permission_support_proposal: Poprzyj wnioski
       user_permission_title: Partycypacja
@@ -103,7 +111,7 @@ pl:
       orders:
         confidence_score: najwyżej oceniane
         created_at: najnowsze
-        hot_score: najbardziej aktywne
+        hot_score: najpopularniejsze
         most_commented: najczęściej komentowane
         relevance: stosowność
         recommendations: rekomendacje
@@ -153,6 +161,7 @@ pl:
       comments_title: Komentarze
       edit_debate_link: Edytuj
       flag: Ta debata została oznaczona jako nieodpowiednia przez kilku użytkowników.
+      login_to_comment: '%{signin} lub %{signup} by zostawić komentarz.'
       share: Udostępnij
       author: Autor
     update:
@@ -186,6 +195,7 @@ pl:
     image: Obraz
   geozones:
     none: Cała dzielnica
+    all: Wszystkie zakresy
   layouts:
     application:
       chrome: Google Chrome
@@ -195,15 +205,15 @@ pl:
     footer:
       accessibility: Ułatwienia dostępu
       conditions: Regulamin
-      consul: Aplikacja CONSUL
-      consul_url: https://github.com/consul/consul
+      consul: Aplikacji CONSUL
+      consul_url: http://consulproject.org/en/
       contact_us: Do centrów pomocy technicznej
       copyright: CONSUL, %{year}
-      description: Ten portal używa %{consul}, który jest %{open_source}.
-      open_source: oprogramowanie open-source
+      description: Ten portal używa %{consul}, która jest %{open_source}. Narzędzie dostosowane przez Fundację ePaństwo na zlecenie Fundacji Pole Dialogu
+      open_source: oprogramowaniem open-source
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
       participation_text: Decyduj, jak kształtować miasto, w którym chcesz mieszkać.
-      participation_title: Udział
+      participation_title: Wróć do początku strony.
       privacy: Polityka prywatności
     header:
       administration_menu: Administrator
@@ -265,6 +275,7 @@ pl:
   map:
     title: "Podział dzielnicy"
     proposal_for_district: " "
+    select_district: Część dzielnicy, której dotyczy pomysł
     start_proposal: Zaproponuj swój pomysł
   omniauth:
     facebook:
@@ -273,7 +284,7 @@ pl:
       name: Facebook
     finish_signup:
       title: "Dodatkowe szczegóły"
-      username_warning: "Ze względu na zmiany w sposób interakcji z sieciami społecznymi, jest możliwe że Twoja nazwa użytkownika wyświetla się jako \"już w użyciu\". Jeśli jest to Twój przypadek, wybierz inną nazwę użytkownika."
+      username_warning: "Ze względu na zmiany w sposobie interakcji z sieciami społecznymi, jest możliwe że Twoja nazwa użytkownika wyświetla się jako \"już w użyciu\". Jeśli jest to Twój przypadek, wybierz inną nazwę użytkownika."
     google_oauth2:
       sign_in: Zaloguj się przez Google
       sign_up: Zarejestruj się przez Google
@@ -290,7 +301,7 @@ pl:
       form:
         submit_button: Stwórz pomysł
     share:
-      message: "Poparłem/am wniosek %{title} w %{handle}. Dołącz do mnie i także go poprzyj!"
+      message: "Ciekawy pomysł! Zobacz więcej."
     edit:
       editing: Edytuj wniosek
       form:
@@ -309,6 +320,11 @@ pl:
       done: Gotowe
       other: Inne
     form:
+      geozone: Część dzielnicy, której dotyczy pomysł
+      proposal_external_url: Link do dodatkowej dokumentacji
+      proposal_question: Pytanie dotyczące wniosku
+      proposal_question_example_html: "Pomysł musi zostać podsumowany w jednym pytaniu, aby można było na nie odpowiedziedzieć: Tak lub Nie"
+      proposal_responsible_name: Pełne nazwisko osoby składającej wniosek
       proposal_responsible_name_note: "(indywidualnie lub jako przedstawiciel zbiorowości; nie będzie wyświetlone publicznie)"
       proposal_summary_note: "(maksymalnie 200 znaków)"
       proposal_video_url_note: Możesz dodać link do YouTube lub Vimeo
@@ -333,7 +349,7 @@ pl:
         hot_score: najbardziej aktywne
         most_commented: najczęściej komentowane
         relevance: stosowność
-        archival_date: zarchiwizowane
+        archival_date: rekemendowane
         recommendations: rekomendacje
       recommendations:
         without_results: Brak wniosków związanych z Twoimi zainteresowaniami
@@ -372,20 +388,20 @@ pl:
       form:
         submit_button: Zaproponuj swój pomysł
       more_info: Jak działają wnioski obywatelskie?
-      recommendation_one: Nie należy używać wielkich liter dla tytuł wniosku lub całych zdań. W Internecie uznawane jest to za krzyk. I nikt nie lubi jak się na niego krzyczy.
+      recommendation_one: Nie należy używać wielkich liter w tytule pomysłu. W Internecie uznawane jest to za krzyk. I nikt nie lubi jak się na niego krzyczy.
       recommendation_three: Ciesz się tą przestrzenią oraz głosami, które ją wypełniają. Należy również do Ciebie.
-      recommendation_two: Wszelkie wnioski lub komentarze sugerujące nielegalne działania zostaną usunięte, a także te, które zamierzają sabotować przestrzenie debaty. Wszystko inne jest dozwolone.
-      recommendations_title: Rekomendacje do utworzenia wniosku
+      recommendation_two: Wszelkie pomysły lub komentarze sugerujące nielegalne działania zostaną usunięte, a także te, które zamierzają sabotować przestrzeń debaty. Wszystko inne jest dozwolone.
+      recommendations_title: Rekomendacje do utworzenia pomysłu.
       start_new: Zaproponuj swój pomysł
     notice:
       retired: Wniosek wycofany
     proposal:
-      created: "Stworzyłeś wniosek!"
+      created: "Stworzyłeś/aś pomysł!"
       share:
-        guide: "Teraz możesz go udostępnić, aby inni mogli zacząć popierać."
-        edit: "Zanim zostanie udostępniony, będziesz mógł zmieniać tekst według własnego uznania."
-        view_proposal: Nie teraz, idź do mojego wniosku
-      already_supported: Już poparłeś ten wniosek. Udostępnij go!
+        guide: "Teraz możesz go udostępnić, aby mieszkańcy mogli go widzieć"
+        edit: "Zanim zostanie udostępniony, będziesz mógł/a zmieniać jego treść według własnego uznania."
+        view_proposal: Nie teraz, idź do mojego pomysłu.
+      already_supported: Już poparłeś ten pomysł. Udostępnij go!
       comments:
         zero: Brak komentarzy
         one: 1 komentarz
@@ -421,6 +437,7 @@ pl:
         other: "%{count} komentarzy"
       comments_tab: Komentarze
       flag: Ten wniosek został oznaczona jako nieodpowiedni przez kilku użytkowników.
+      login_to_comment: '%{signin} lub %{signup} by zostawić komentarz.'
       notifications_tab: Powiadomienia
       milestones_tab: Kamienie milowe
       retired_warning: "Autor uważa, że niniejszy wniosek nie powinien otrzymywać więcej poparcia."
@@ -467,6 +484,10 @@ pl:
       back: Wróć do głosowania
       cant_answer_not_logged_in: "%{signin} lub %{signup} aby wziąć udział."
       comments_tab: Komentarze
+      login_to_comment: '%{signin} lub %{signup} by zostawić komentarz.'
+      signin: Zaloguj się
+      signup: Zarejestruj się
+      cant_answer_verify_html: "Aby odpowiedzieć, musisz %{verify_link}."
       verify_link: "zweryfikuj swoje konto"
       cant_answer_expired: "Ta sonda została zakończona."
       cant_answer_wrong_geozone: "To pytanie nie jest dostępne w Twojej strefie geograficznej."
@@ -535,8 +556,19 @@ pl:
     collective: Zbiorowy
     flag: Oznacz jako nieodpowiednie
     follow: "Obserwuj"
-    following: "Obserwowane"
+    following: "Obserwowany"
     follow_entity: "Obserwuj %{entity}"
+    followable:
+      budget_investment:
+        create:
+          notice_html: "Obserwujesz teraz ten projekt inwestycyjny! </br> Powiadomimy Cię o zaistniałych zmianach, abyś był na bieżąco."
+        destroy:
+          notice_html: "Przestałeś obserwować ten projekt inwestycyjny! </br> Nie będziesz już otrzymywać powiadomień związanych z tym projektem."
+      proposal:
+        create:
+          notice_html: "Obserwujesz teraz ten pomysł! </br> Powiadomimy Cię o zmianach, abyś był/a na bieżąco."
+        destroy:
+          notice_html: "Przestałeś obserwować ten projekt inwestycyjny! </br> Nie będziesz już otrzymywać powiadomień związanych z tym projektem."
     hide: Ukryj
     print:
       print_button: Wydrukuj tę informację
@@ -598,6 +630,58 @@ pl:
     whatsapp: WhatsApp
     telegram: "%{org} Telegram"
     instagram: "%{org} Instagram"
+  spending_proposals:
+    form:
+      association_name_label: "Jeśli proponujesz nazwę stowarzyszenia lub zespołu, dodaj tutaj tę nazwę"
+      association_name: "Nazwa stowarzyszenia"
+      description: Opis
+      external_url: Link do dodatkowej dokumentacji
+      geozone: Część dzielnicy, której dotyczy pomysł
+      submit_buttons:
+        create: Utwórz
+        new: Utwórz
+      title: Tytuł wniosku dotyczącego wydatków
+    index:
+      title: Budżetowanie partycypacyjne
+      unfeasible: Niewykonalne projekty inwestycyjne
+      by_geozone: "Projekty inwestycyjne o zakresie: %{geozone}"
+      search_form:
+        button: Szukaj
+        placeholder: Projekty inwestycyjne...
+        title: Szukaj
+      search_results:
+        one: " zawierające termin '%{search_term}'"
+        few: " zawierające termin '%{search_term}'"
+        many: " zawierające termin '%{search_term}'"
+        other: " zawierające termin '%{search_term}'"
+      sidebar:
+        geozones: Część dzielnicy, której dotyczy pomysł
+        feasibility: Wykonalność
+        unfeasible: Niewykonalne
+      start_spending_proposal: Utwórz projekt inwestycyjny
+    new:
+      more_info: Jak działa budżetowanie partycypacyjne?
+      recommendation_one: Obowiązkowe jest, aby wniosek odwoływał się do działania podlegającego procedurze budżetowej.
+      recommendation_three: Spróbuj opisać swoją propozycję wydatków, aby zespół oceniający zrozumiał Twoje myślenie.
+      recommendation_two: Wszelkie propozycje lub komentarze sugerujące nielegalne działania zostaną usunięte.
+      recommendations_title: Jak utworzyć propozycję wydatków
+      start_new: Utwórz wniosek wydatkowy
+    show:
+      author_deleted: Użytkownik usunięty
+      code: "Kod wniosku:"
+      share: Udostępnij
+    wrong_price_format: Tylko liczby całkowite
+    spending_proposal:
+      spending_proposal: Projekt inwestycyjny
+      already_supported: Już to poparłeś. Udostępnij to!
+      support: Poparcie
+      support_title: Wesprzyj ten projekt
+      supports:
+        zero: Brak poparcia
+        one: 1 popierający
+        few: "%{count} popierających"
+        many: "%{count} popierających"
+        other: "%{count} popierających"
   stats:
     index:
       visits: Odwiedziny
@@ -681,6 +765,11 @@ pl:
       organization: Organizacje nie mogą głosować
       unfeasible: Nie można zrealizować niemożliwych do zrealizowania projektów inwestycyjnych
       not_voting_allowed: Faza głosowania jest zamknięta
+      different_heading_assigned:
+        one: "Możesz wspierać projekty inwestycyjne tylko w rejonie %{count}"
+        few: "You can only support investment projects in %{count} districts. You have already supported investments in %{supported_headings}."
+        many: "You can only support investment projects in %{count} districts. You have already supported investments in %{supported_headings}."
+        other: "Możesz wspierać projekty inwestycyjne tylko w rejonach %{count}"
   welcome:
     feed:
       most_active:
@@ -713,14 +802,14 @@ pl:
       title: Weryfikacja konta
     welcome:
       go_to_index: Zobacz propozycje i debaty
-      start_using_consul: Przejdź do strony indeksu
+      start_using_consul: Przejdź do strony głównej
       title: Twoje konto zostało poprawnie zweryfikowane
       user_permission_debates: ' '
-      user_permission_info: Z Twoim kontem możesz...
-      user_permission_proposal: Twórz i dołączaj do pomysłów
-      user_permission_support_proposal: Popieraj propozycje*
+      user_permission_info: "Teraz możesz:"
+      user_permission_proposal: Przeglądać i komentować pomysły innych
+      user_permission_support_proposal: Dodawać swoje pomysły i dołączać do społeczności innych pomysłów
       user_permission_verify: "Aby wykonać wszystkie czynności, zweryfikuj swoje konto."
-      user_permission_verify_info: "* Tylko dla użytkowników Census."
+      user_permission_verify_info: "itp."
       user_permission_verify_my_account: Zweryfikuj swoje konto
       user_permission_votes: ' '
   invisible_captcha:
@@ -740,7 +829,7 @@ pl:
     score_positive: "Tak"
     score_negative: "Nie"
     content_title:
-      proposal: "Wniosek"
+      proposal: "Pomysł"
       debate: "Debata"
       budget_investment: "Inwestycje budżetowe"
   admin/widget:

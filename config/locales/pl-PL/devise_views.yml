@@ -1,4 +1,4 @@
-pl:
+﻿pl:
   devise_views:
     confirmations:
       new:
@@ -13,8 +13,8 @@ pl:
         title: Potwierdź moje konto
     mailer:
       confirmation_instructions:
-        confirm_link: Potwierdź moje konto
-        text: "Możesz potwierdzić Twoje konto emailowe pod następującym linkiem:"
+        confirm_link: Potwierdź konto
+        text: "Potwierdź swoje konto klikając w poniższy link:"
         title: Witaj
         welcome: Witaj
       reset_password_instructions:
@@ -49,6 +49,10 @@ pl:
           title: Zarejestruj się jako organizacja lub kolektyw
         success:
           back_to_index: Rozumiem, zabierz mnie do strony głównej
+          instructions_1_html: "<b>Wkrótce skontaktujemy się z Tobą</b>, aby zweryfikować, czy rzeczywiście reprezentujesz ten kolektyw."
+          instructions_2_html: Podczas gdy Twój <b>e-mail jest przeglądany</b>, wysłaliśmy Ci <b>link do potwierdzenia Twojego konta</b>.
+          instructions_3_html: Po potwierdzeniu możesz zacząć uczestniczyć jako niezweryfikowany kolektyw.
+          thank_you_html: Dziękujemy za zarejestrowanie Twojego kolektywu na stronie. W tym momencie <b>oczekuje weryfikacji</b>.
           title: Rejestracja organizacji / kolektywu
     passwords:
       edit:
@@ -118,4 +122,7 @@ pl:
           username_note: Nazwa, która pojawia się obok Twoich postów
         success:
           back_to_index: Rozumiem, zabierz mnie do strony głównej.
+          instructions_1_html: <b>Sprawdź swoją skrzynkę e-mail</b> - wysłaliśmy Ci <b>link do potwierdzenia Twojego konta</b>.
+          instructions_2_html: Po potwierdzeniu możesz w pełni korzystać z możliwości portalu.
+          thank_you_html: Dziękujemy za rejestrację na stronie. Teraz musisz <b>potwierdzić swój adres e-mail</b>.
           title: Potwierdź swój adres e-mail

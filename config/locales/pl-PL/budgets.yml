@@ -7,6 +7,12 @@ pl:
         remaining: "Wciąż masz <span>%{amount}</span> do zainwestowania."
         no_balloted_group_yet: "Jeszcze nie zagłosowałeś na tej grupie, oddaj swój głos!"
         remove: Usuń głos
+        voted_html:
+          one: "Zagłosowałeś na <span>jedną</span> inwestycję."
+          few: "Zagłosowałeś na <span>%{count}</span> inwestycje."
+          many: "Zagłosowałeś na <span>%{count}</span> inwestycji."
+          other: "Zagłosowałeś na <span>%{count}</span> inwestycji."
+        voted_info_html: "Możesz zmienić swój głos w każdej chwili aż do końca tej fazy.<br> Nie ma potrzeby wydawania wszystkich dostępnych pieniędzy."
         voted_info_2: "Ale możesz zmienić swój głos w dowolnym momencie, dopóki ta faza jest zamknięta."
         zero: Nie wybrałeś/aś jeszcze żadnego projektu.
       reasons_for_not_balloting:
@@ -16,6 +22,7 @@ pl:
         not_selected: Niewybrane projekty inwestycyjne nie mogą być wspierane
         no_ballots_allowed: Faza wybierania jest zamknięta
         change_ballot: zmieńcie swoje głosy
+        casted_offline: You have already participated offline
     groups:
       show:
         title: Wybierz opcję
@@ -74,6 +81,11 @@ pl:
           title: Szukaj
         sidebar:
           my_ballot: Moje głosowanie
+          voted_html:
+            one: "<strong>Zagłosowałeś na jedną propozycję kosztem %{amount_spent}</strong>"
+            few: "<strong>You voted %{count} proposals with a cost of %{amount_spent}</strong>"
+            many: "<strong>You voted %{count} proposals with a cost of %{amount_spent}</strong>"
+            other: "<strong>Zagłosowałeś na %{count} propozycji kosztem %{amount_spent}</strong>"
           voted_info: Możesz %{link} w każdej chwili aż do zamknięcia tej fazy. Nie ma potrzeby wydawania wszystkich dostępnych pieniędzy.
           voted_info_link: zmień swój głos
           change_ballot: "Jeśli zmienisz zdanie, możesz usunąć swoje głosy w %{check_ballot} i zacząć od nowa."
@@ -95,6 +107,9 @@ pl:
         author_deleted: Użytkownik usunięty
         price_explanation: Wyjaśnienie ceny
         unfeasibility_explanation: Wyjaśnienie niewykonalności
+        code_html: "Kod projektu inwestycyjnego: <strong>%{code}</strong>"
+        location_html: "Lokalizacja <strong>%{location}</strong>"
+        organization_name_html: "Zawnioskowano w imieniu: <strong>%{name}</strong>"
         share: Udostępnij
         title: Projekt inwestycyjny
         supports: Wsparcie
@@ -103,7 +118,10 @@ pl:
         comments_tab: Komentarze
         milestones_tab: Kamienie milowe
         author: Autor
+        project_unfeasible_html: "Ten projekt inwestycyjny <strong>został oznaczony jako niewykonalny</strong> i nie przejdzie do fazy głosowania."
+        project_selected_html: "Ten projekt inwestycyjny <strong>został wybrany</strong> do fazy głosowania."
         project_winner: "Zwycięski projekt inwestycyjny"
+        project_not_selected_html: "Ten projekt inwestycyjny <strong>nie został wybrany</strong> do fazy głosowania."
         see_price_explanation: Wyjaśnienie cen
       wrong_price_format: Tylko liczby całkowite
       investment:
@@ -161,6 +179,9 @@ pl:
       heading: "Kamienie milowe budżetu partycypacyjnego"
       heading_selection_title: "Przez powiat"
       no_winner_investments: "Brak zwycięskich inwestycji"
+      filters:
+        label: "Bieżący stan projektu"
+        all: "Wszystko (%{count})"
     phases:
       errors:
         dates_range_invalid: "Data rozpoczęcia nie może być taka sama lub późniejsza od daty zakończenia"

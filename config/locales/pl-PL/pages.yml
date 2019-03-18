@@ -80,22 +80,22 @@ pl:
           key_header: Klucz
           page_header: Strona
           rows:
-            - 
+            -
               key_column: 0
               page_column: Strona Główna
-            - 
+            -
               key_column: 1
               page_column: Debaty
-            - 
+            -
               key_column: 2
               page_column: Wnioski
-            - 
+            -
               key_column: 3
               page_column: Głosów
-            - 
+            -
               key_column: 4
               page_column: Budżety partycypacyjne
-            - 
+            -
               key_column: 5
               page_column: Procesy legislacyjne
         browser_table:
@@ -104,19 +104,19 @@ pl:
           browser_header: Przeglądarka
           key_header: Kombinacje kluczy
           rows:
-            - 
+            -
               browser_column: Wyszukiwarka
               key_column: ALT + skrót, a następnie ENTER
-            - 
+            -
               browser_column: Firefox
               key_column: ALT + CAPS + skrót
-            - 
+            -
               browser_column: Chrome
               key_column: ALT + skrót (CTRL + ALT + skróty dla MAC)
-            - 
+            -
               browser_column: Safari
               key_column: ALT + skrót (CTRL + ALT + skróty dla MAC)
-            - 
+            -
               browser_column: Opera
               key_column: CAPS + ESC + skrót
       textsize:
@@ -126,28 +126,28 @@ pl:
           browser_header: Przeglądarka
           action_header: Działanie, które należy podjąć
           rows:
-            - 
+            -
               browser_column: Wyszukiwarka
               action_column: Widok > rozmiar tekstu
-            - 
+            -
               browser_column: Firefox
               action_column: Widok > rozmiar
-            - 
+            -
               browser_column: Chrome
               action_column: Ustawienia (ikona) > Opcje > Zaawansowane > zawartość www > rozmiar tekstu
-            - 
+            -
               browser_column: Safari
               action_column: Widok > powiększenie / pomniejszenie
-            - 
+            -
               browser_column: Opera
               action_column: Widok > skala
         browser_shortcuts_table:
           description: "Innym sposobem na modyfikację rozmiar tekstu jest użycie skrótów klawiaturowych zdefiniowanych w przeglądarkach, w szczególności kombinacji klawiszy:"
           rows:
-            - 
+            -
               shortcut_column: CTRL i + (CMD i + Mac)
               description_column: Zwiększa rozmiar tekstu
-            - 
+            -
               shortcut_column: CTRL i - (CMD - i na komputerze MAC)
               description_column: Zmniejsza rozmiar tekstu
       compatibility:
@@ -155,7 +155,10 @@ pl:
     titles:
       help: "Czym jest %{org}? - Uczestnictwem obywatelskim"
     verify:
+      code: Kod, który otrzymałeś w liście
+      email: E-mail
       info: "Aby zweryfikować konto, wprowadź swoje dane dostępu:"
       info_code: "Teraz wprowadź kod otrzymany w liście:"
+      password: Hasło
       submit: Zweryfikuj swoje konto
       title: Zweryfikuj swoje konto

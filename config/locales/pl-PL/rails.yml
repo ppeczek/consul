@@ -9,7 +9,7 @@ pl:
       - Pt
       - Sob
     abbr_month_names:
-      - 
+      -
       - STY
       - LUT
       - MAR
@@ -35,7 +35,7 @@ pl:
       long: "%d %B %Y"
       short: "%d %b"
     month_names:
-      - 
+      -
       - Styczeń
       - Luty
       - Marzec
@@ -196,7 +196,9 @@ pl:
           quadrillion: Biliard
           thousand: Tysiąc
           trillion: Bilion
+          unit: ""
       format:
+        delimiter: ""
         precision: 3
         significant: true
         strip_insignificant_zeros: true
@@ -214,7 +216,11 @@ pl:
           tb: TB
     percentage:
       format:
+        delimiter: ""
         format: "%n %"
+    precision:
+      format:
+        delimiter: ""
   support:
     array:
       last_word_connector: ", i "
