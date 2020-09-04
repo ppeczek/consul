@@ -46,19 +46,50 @@ sr:
     org_name_description: "Ово име ће се појавити у наслову мејлова, страницама за помоћ..."
     related_content_score_threshold: "Граница вредновања повезаног садржаја"
     related_content_score_threshold_description: "Према скалирању гласова у сродним садржајима, скрива се садржај који корисници означавају као неповезан"
+    hot_score_period_in_days: "Период (у данима) за филтер \"најактивнији\""
+    hot_score_period_in_days_description: "Филтер \"најактивнији\" коришћен у више области ће бити заснован на гласовима у последњих Х дана"
+    mailer_from_name: "Име пошиљаоца поруке"
+    mailer_from_name_description: "Име онако како ће се појављивати као име пошиљаоца у електронској пошти послатој из апликације"
+    mailer_from_address: "Адреса пошиљаоца електронске поште"
+    mailer_from_address_description: "Ова адреса електронске поште ће се појављивати у порукама послатим из апликације"
+    meta_title: "Назив сајта (SEO)"
+    meta_title_description: "Назив сајта <title>, у сврху побољшања SEO"
+    meta_description: "Опис сајта (SEO)"
+    meta_description_description: 'Опис сајта <meta name="description">, коришћен да би се побољшала SEO'
+    meta_keywords: "Кључне речи (SEO)"
+    meta_keywords_description: 'Кључне речи <meta name="keywords">, коришћене да се побољша SEO'
+    min_age_to_participate: Доња старосна граница за регистрацију
+    min_age_to_participate_description: "Старосна граница корисника за учествовање у свим процесима где је неопходна верификација"
     proposals:
       successful_proposal_id: Успешни предлози
+      successful_proposal_id_description: Овај предлог се користи као референца за успешан предлог у смислу подршке и биће приказан на glavnoj tabli.
       poll_short_title: Гласање
+      poll_short_title_description: Кратак опис функције упитника. Омогућава корисницима да креирају упитнике везане за предлог
       poll_description: Опис анкете
+      poll_description_description: Детаљан опис функције упитника
       poll_link: Линк за додатне информације
+      poll_link_description: Додаје додатни линк за информације функцији упитника
       email_short_title: Емаил
+      email_short_title_description: 'Кратак опис функције слања електронске поште. Омогућава корисницима да шаљу електронску пошту у сврху промоције својих предлога. Садржај ове поруке се налази на локацији "/app/views/dashboard/mailer/forward.html.erb"'
       email_description: Опис емаила
+      email_description_description: Детаљан опис функције електронске поште
       poster_short_title: Постер
+      poster_short_title_description: 'Кратак опис функције за постер. Омогућава корисницима да преузму постер у PDF формату у циљу промоције свог предлога. Садржај постера је на локацији "/app/views/dashboard/poster/index.pdf.erb"'
       poster_description: Опис анкете
+      poster_description_description: Детаљан опис функције за постер
+    analytics_url: "Аналитички URL"
+    proposal_notification_minimum_interval_in_days: "Најмањи временски интервал (у данима) у коме аутори предлога могу да шаљу обавештења о новим предлозима"
+    proposal_notification_minimum_interval_in_days_description: "Број дана у којима корисник може да шаље обавештења свим пратиоцима предлога"
+    direct_message_max_per_day: "Највећи број дозвољених директних порука дневно"
+    direct_message_max_per_day_description: "Највећи број директних порука које корисник може дневно да пошаље"
     feature:
       twitter_login: "Twitter приступ"
+      twitter_login_description: "Дозволи корисницима да се региструју својим Twitter налогом"
       facebook_login: "Facebook приступ"
+      facebook_login_description: "Дозволи корисницима да се региструју својим Facebook налогом"
       google_login: "Google приступ"
+      google_login_description: "Дозволи корисницима да се региструју својим Google налогом"
+      wordpress_login: "Пријава Wordpress налогом"
       featured_proposals: "Истакнути предлози"
       signature_sheets: "Поље за потпис"
       user:
