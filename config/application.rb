@@ -49,6 +49,7 @@ module Consul
       "sl",
       "sq",
       "so",
+      "sr-SP",
       "sv",
       "tr",
       "val",

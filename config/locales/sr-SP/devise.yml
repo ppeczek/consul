@@ -1,5 +1,5 @@
 #Additional translations at https://github.com/plataformatec/devise/wiki/I18n
-sr:
+sr-SP:
   devise:
     password_expired:
       expire_password: "Лозинка је истекла"
